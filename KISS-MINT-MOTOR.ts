@@ -180,7 +180,7 @@ namespace KissMintMotor {
 
     }
     /** 
-     * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücker(L293D) oder Darlington-Array(ULN2003)
+     * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücke(L293D) oder Darlington-Array(ULN2003)
      * Wie viele Schritte = 1 Umdrehung entspricht ist vom Motor abhängig
      */
     //% block

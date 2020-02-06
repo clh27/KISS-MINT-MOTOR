@@ -36,9 +36,11 @@ namespace KissMintMotor {
          * C7 mit IN2
          * C8 mit IN3
          * C8 mit IN4
+         * @param M wähle deinen Motor
+         * @param R wähle die Richtung des Motors
          */
     //% block
-    export function DigitalMotor(Motor: MyMotor, Richtung: Richtung) {
+    export function DigitalMotor(M: MyMotor, R: Richtung) {
 
 
         if (M == 0 && R == 0) {
@@ -111,7 +113,13 @@ namespace KissMintMotor {
 
 
     /** 
-      Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über freigewählte PIN's gesteuert werden.
+     * 
+     *   Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über freigewählte PIN's gesteuert werden.
+     * @param M wähle deinen Motor
+     * @param R wähle die Richtung des Motors
+     * @param A1 wähle den Anschluss1 für deinen Motor
+     * @param A2 wähle den Anschluss2 für deinen Motor
+     * 
       */
     //% block
     export function DigitalMotor_PinWahl(M: MyMotor, R: Richtung, A1: DigitalPin, A2: DigitalPin, B1: DigitalPin, B2: DigitalPin) {
@@ -177,6 +185,8 @@ namespace KissMintMotor {
     /** 
      * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücke(L293D) oder Darlington-Array(ULN2003)
      * Wie viele Schritte = 1 Umdrehung entspricht ist vom Motor abhängig
+     * @param s wähle um wieviele Schritte sich der motor drehen soll
+     * @param R wähle die Richtung des Motors
     
      * Verbinde:
          * C6 mit IN1

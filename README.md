@@ -2,10 +2,10 @@
 
 Mit diesem Paket lassen sich zwei DC-Motoren über eine doppelte H-Brücke (bspw. L293D) ansteuerun. 
 Am Calliope werden hierzu die Pins C6, C7, C8 und C9 verwendet. 
-In1->C6
-In2->C7
-In3->C8
-In4->C9
+In1->P0
+In2->P1
+In3->P2
+In4->P3
 
 Wird der IC auf dem Breadbord verwendet verbinde EN1,2 und EN3,4 mit +5V so werden die Motoren mit voller Leistung betrieben.
 Es ist darauf zu achten, dass der Calliope nicht mit einer Spannung von über 3,3V verbunden wird.

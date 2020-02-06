@@ -182,6 +182,7 @@ namespace KissMintMotor {
     /** 
      * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücke(L293D) oder Darlington-Array(ULN2003)
      * Wie viele Schritte = 1 Umdrehung entspricht ist vom Motor abhängig
+    
      * Verbinde:
          * C6 mit IN1
          * C7 mit IN2
@@ -189,7 +190,7 @@ namespace KissMintMotor {
          * C8 mit IN4
      */
     //% block
-    export function StepperMotor(R: Richtung, S: number) {
+    export function SchrittMotor(R: Richtung, S: number) {
         let i = 0;
         if (R == 0) {
             while (i < S) {

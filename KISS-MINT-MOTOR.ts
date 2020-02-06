@@ -27,7 +27,7 @@ declare const enum Richtung {
 /**
  * Benutzerdefinierte Blöcke
  */
-//% color=#F99B1C icon="\\uf1b9"
+//% color=#F99B1C icon="\uf1b9"
 namespace KissMintMotor {
     /** 
          * Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über die PIN's C6, C7, C8, C9 angesteuert werden.

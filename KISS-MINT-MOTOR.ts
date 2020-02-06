@@ -43,7 +43,7 @@ namespace KissMintMotor {
          * C8 mit IN4
          */
     //% block
-    export function DigitalMotor(M: MyMotor, R: Richtung) {
+    export function DigitalMotor(M: MyMotor, Richtung: Richtung) {
 
 
         if (M == 0 && R == 0) {

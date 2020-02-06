@@ -20,6 +20,6 @@ Dieser Motor vollzieht mit runf 513 Schritten eine vollständige Umdrehung.
 
 
 
-*made for PXT/Calliope
+Supported targets
 
-
+made for PXT/calliopemini

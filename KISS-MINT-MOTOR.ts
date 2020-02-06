@@ -4,12 +4,7 @@
  * Weitere Informationen unter https://makecode.calliope.cc/blocks/custom
  */
 
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
+
 
 
 declare const enum MyMotor {
@@ -43,7 +38,7 @@ namespace KissMintMotor {
          * C8 mit IN4
          */
     //% block
-    export function DigitalMotor(M: MyMotor, Richtung: Richtung) {
+    export function DigitalMotor(Motor: MyMotor, Richtung: Richtung) {
 
 
         if (M == 0 && R == 0) {

@@ -154,18 +154,14 @@ namespace KissMintMotor {
 
 
     }
-    /** 
-         * 
-         * Mit diesem Block kann ein Motor an einer doppel H-Brücke (vgl. L293D) über freigewählte PIN's gesteuert werden.
-         * @param R wähle die Richtung des Motors
-         * @param A1 wähle den Anschluss1 für deinen Motor
-         * @param A2 wähle den Anschluss2 für deinen Motor
-         * 
-          */
-    //% block
-    // export function Pauls_ansatz(M: MyMotor, A1: MotorPin, A2: MotorPin) {
-    //  let pinlist: DigitalPin[] = [DigitalPin.P0, DigitalPin.P1, DigitalPin.P2, DigitalPin.P3, DigitalPin.C16, DigitalPin.C17, DigitalPin.C18, DigitalPin.C19]
-    //      }
+
+//    /** 
+    
+//         */
+//   //% block
+//    export function Pauls_ansatz(M: MyMotor, A1: MotorPin, A2: MotorPin) {
+//      let pinlist: DigitalPin[] = [DigitalPin.P0, DigitalPin.P1, DigitalPin.P2, DigitalPin.P3, DigitalPin.C16, DigitalPin.C17, DigitalPin.C18, DigitalPin.C19]
+//       }
 
     /** 
       * 

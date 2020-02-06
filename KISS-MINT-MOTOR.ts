@@ -1,17 +1,3 @@
-
-/**
- * Nutze diese Datei für benutzerdefinierte Funktionen und Blöcke.
- * Weitere Informationen unter https://makecode.calliope.cc/blocks/custom
- */
-
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
-
-
 declare const enum MyMotor {
     //% block="A"
     A = 0,
@@ -32,7 +18,7 @@ declare const enum Richtung {
 /**
  * Benutzerdefinierte Blöcke
  */
-//% color=#F99B1C icon="\uf193"
+//% color=#F99B1C icon="\\uf1b9"
 namespace KissMintMotor {
     /** 
          * Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über die PIN's C6, C7, C8, C9 angesteuert werden.
@@ -41,6 +27,8 @@ namespace KissMintMotor {
          * C7 mit IN2
          * C8 mit IN3
          * C8 mit IN4
+         * @param M wähle deinen Motor
+         * @param R wähle die Richtung des Motors
          */
     //% block
     export function DigitalMotor(M: MyMotor, R: Richtung) {
@@ -116,7 +104,13 @@ namespace KissMintMotor {
 
 
     /** 
-      Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über freigewählte PIN's gesteuert werden.
+     * 
+     *   Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über freigewählte PIN's gesteuert werden.
+     * @param M wähle deinen Motor
+     * @param R wähle die Richtung des Motors
+     * @param A1 wähle den Anschluss1 für deinen Motor
+     * @param A2 wähle den Anschluss2 für deinen Motor
+     * 
       */
     //% block
     export function DigitalMotor_PinWahl(M: MyMotor, R: Richtung, A1: DigitalPin, A2: DigitalPin, B1: DigitalPin, B2: DigitalPin) {
@@ -182,6 +176,8 @@ namespace KissMintMotor {
     /** 
      * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücke(L293D) oder Darlington-Array(ULN2003)
      * Wie viele Schritte = 1 Umdrehung entspricht ist vom Motor abhängig
+     * @param s wähle um wieviele Schritte sich der motor drehen soll
+     * @param R wähle die Richtung des Motors
     
      * Verbinde:
          * C6 mit IN1
@@ -260,4 +256,5 @@ namespace KissMintMotor {
     }
 
 }
+
  

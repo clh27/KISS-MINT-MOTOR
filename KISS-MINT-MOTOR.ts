@@ -40,7 +40,7 @@ declare const enum Richtung {
 /**
  * Benutzerdefinierte Blöcke
  */
-//% color=#F99B1C icon="\uf1b9"
+//% color=#FD9931 icon="\uf1b9"
 namespace KissMintMotor {
 
     /** 

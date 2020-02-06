@@ -163,12 +163,9 @@ namespace KissMintMotor {
          * 
           */
     //% block
-    export function Pauls_ansatz(M: MyMotor, A1: MotorPin, A2: MotorPin) {
-        let pinlist: DigitalPin[] = [DigitalPin.P0, DigitalPin.P1, DigitalPin.P2, DigitalPin.P3, DigitalPin.C16, DigitalPin.C17, DigitalPin.C18, DigitalPin.C19]
-
-
-
-    }
+    // export function Pauls_ansatz(M: MyMotor, A1: MotorPin, A2: MotorPin) {
+    //  let pinlist: DigitalPin[] = [DigitalPin.P0, DigitalPin.P1, DigitalPin.P2, DigitalPin.P3, DigitalPin.C16, DigitalPin.C17, DigitalPin.C18, DigitalPin.C19]
+    //      }
 
     /** 
       * 

@@ -19,7 +19,6 @@ Getestet wurde dies mit dem Schrittmotor 28BYJ-48 (mit einer untersetzung von 1 
 Dieser Motor vollzieht mit runf 513 Schritten eine vollständige Umdrehung.
 
 
+## Supported targets
 
-Supported targets
-
-made for PXT/calliopemini
+* for PXT/calliope mini

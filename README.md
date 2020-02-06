@@ -1,7 +1,7 @@
 # kiss-mint-motor
 
 Mit diesem Paket lassen sich zwei DC-Motoren über eine doppelte H-Brücke (bspw. L293D) ansteuerun. 
-Am Calliope werden hierzu die Pins C6, C7, C8 und C9 verwendet. 
+Am Calliope werden hierzu die Pins P0, P1, P2 und P3 verwendet. 
 In1->P0
 In2->P1
 In3->P2
@@ -20,6 +20,6 @@ Dieser Motor vollzieht mit runf 513 Schritten eine vollständige Umdrehung.
 
 
 
-* for PXT/Calliope
+*made for PXT/Calliope
 
 

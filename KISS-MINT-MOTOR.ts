@@ -30,7 +30,7 @@ namespace KissMintMotor {
          * @param M wähle deinen Motor
          * @param R wähle die Richtung des Motors
          */
-    //% block
+    //% block="DigitalMotor"
     export function DigitalMotor(M: MyMotor, R: Richtung) {
 
 
@@ -111,7 +111,7 @@ namespace KissMintMotor {
      * @param A2 wähle den Anschluss2 für deinen Motor
      * 
       */
-    //% block
+    //% block="Motor_A_PinWahl"
     export function Motor_A_PinWahl( R: Richtung, A1: DigitalPin, A2: DigitalPin,) {
 
         if ( R == 0) {
@@ -142,7 +142,7 @@ namespace KissMintMotor {
       * @param A2 wähle den Anschluss2 für deinen Motor
       * 
        */
-    //% block
+    //% block="Motor_B_PinWahl"
     export function Motor_B_PinWahl(R: Richtung, B1: DigitalPin, B2: DigitalPin, ) {
 
         if (R == 0) {

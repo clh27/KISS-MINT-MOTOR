@@ -1,21 +1,25 @@
 # kiss-mint-motor
 
+Mit diesem Paket lassen sich zwei DC-Motoren über eine doppelte H-Brücke (bspw. L293D) ansteuerun. 
+Am Calliope werden hierzu die Pins C6, C7, C8 und C9 verwendet. 
+In1->C6
+In2->C7
+In3->C8
+In4->C9
+
+Wird der IC auf dem Breadbord verwendet verbinde EN1,2 und EN3,4 mit +5V so werden die Motoren mit voller Leistung betrieben.
+Es ist darauf zu achten, dass der Calliope nicht mit einer Spannung von über 3,3V verbunden wird.
 
 
-## TODO
+Wird ein Motor Driver Shield verwendet kann hier oft über einen Jumper der Enable Pin an +5V angeschlossen werden.
 
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] On GitHub, create a new file named LICENSE. Select the MIT License template.
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/extensions/approval
 
-Read more at https://makecode.microbit.org/extensions
+Über eine doppelte H-Brücke kann ebenso wie über ein Darlington Array (bspw. ULN2003) ein Schrittmotor angesteuert werden. 
+Getestet wurde dies mit dem Schrittmotor 28BYJ-48 (mit einer untersetzung von 1 zu 349184).
+Dieser Motor vollzieht mit runf 513 Schritten eine vollständige Umdrehung.
 
-## Supported targets
 
-* for PXT/microbit
-(The metadata above is needed for package search.)
+
+* for PXT/Calliope
+
 

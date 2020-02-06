@@ -16,7 +16,7 @@ Wird ein Motor Driver Shield verwendet kann hier oft über einen Jumper der Enab
 
 Über eine doppelte H-Brücke kann ebenso wie über ein Darlington Array (bspw. ULN2003) ein Schrittmotor angesteuert werden. 
 Getestet wurde dies mit dem Schrittmotor 28BYJ-48 (mit einer untersetzung von 1 zu 349184).
-Dieser Motor vollzieht mit runf 513 Schritten eine vollständige Umdrehung.
+Dieser Motor vollzieht mit rund 513 Schritten eine vollständige Umdrehung.
 
 
 ## Supported targets

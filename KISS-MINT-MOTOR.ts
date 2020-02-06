@@ -96,12 +96,7 @@ namespace KissMintMotor {
         }
 
 
-    }
-    declare const enum PIN {
-
-
-    }
-
+ 
 
     /** 
      * 
@@ -112,7 +107,7 @@ namespace KissMintMotor {
      * 
       */
     //% block="Motor_A_PinWahl"
-    export function Motor_A_PinWahl( R: Richtung, A1: DigitalPin, A2: DigitalPin,) {
+    export function Motor_A_PinWahl( R: Richtung, A1: DigitalPin, A2: DigitalPin) {
 
         if ( R == 0) {
             pins.digitalWritePin(A1, 1)
@@ -143,7 +138,7 @@ namespace KissMintMotor {
       * 
        */
     //% block="Motor_B_PinWahl"
-    export function Motor_B_PinWahl(R: Richtung, B1: DigitalPin, B2: DigitalPin, ) {
+    export function Motor_B_PinWahl(R: Richtung, B1: DigitalPin, B2: DigitalPin) {
 
         if (R == 0) {
             pins.digitalWritePin(B1, 1)

@@ -41,8 +41,15 @@ declare const enum Richtung {
  * Benutzerdefinierte Blöcke
  */
 //% color=#F99B1C icon="\uf1b9"
+
 namespace KissMintMotor {
 
+    function startMotor(M1: DigitalPin, M2: DigitalPin, richtungsWert: Richtung) {
+        let richtung: number[][] = [[1, 0], [0, 1], [0, 0]]
+
+        pins.digitalWritePin(M1, richtung[richtungsWert][0])
+        pins.digitalWritePin(M2, richtung[richtungsWert][1])
+    }
     /** 
          * Mit diesem Block kann eine doppel H-Brücke (vgl. L293D) über die PIN's P0, P1, P1, P1 angesteuert werden.
          * Verbinde: 
@@ -54,62 +61,16 @@ namespace KissMintMotor {
          * @param R wähle die Richtung des Motors
          */
     //% block
+
     export function DigitalMotor(M: MyMotor, R: Richtung) {
+        let MotorFixedPinList: DigitalPin[][] = [[DigitalPin.P0, DigitalPin.P1], [DigitalPin.P2, DigitalPin.P3]]
 
-
-        if (M == 0 && R == 0) {
-
-            pins.digitalWritePin(DigitalPin.P0, 1)
-            pins.digitalWritePin(DigitalPin.P1, 0)
-
+        if (M < 2) {
+            startMotor(MotorFixedPinList[M][0], MotorFixedPinList[M][1], R)
         }
-
-        else if (M == 0 && R == 1) {
-            pins.digitalWritePin(DigitalPin.P0, 0)
-            pins.digitalWritePin(DigitalPin.P1, 1)
-
-        }
-        else if (M == 0 && R == 2) {
-            pins.digitalWritePin(DigitalPin.P0, 0)
-            pins.digitalWritePin(DigitalPin.P1, 0)
-
-        }
-
-        else if (M == 1 && R == 0) {
-
-            pins.digitalWritePin(DigitalPin.P2, 1)
-            pins.digitalWritePin(DigitalPin.P3, 0)
-        }
-
-        else if (M == 1 && R == 1) {
-
-            pins.digitalWritePin(DigitalPin.P2, 0)
-            pins.digitalWritePin(DigitalPin.P3, 1)
-        }
-        else if (M == 1 && R == 2) {
-
-            pins.digitalWritePin(DigitalPin.P2, 0)
-            pins.digitalWritePin(DigitalPin.P3, 0)
-        }
-
-        else if (M == 2 && R == 0) {
-            pins.digitalWritePin(DigitalPin.P0, 1)
-            pins.digitalWritePin(DigitalPin.P1, 0)
-            pins.digitalWritePin(DigitalPin.P2, 1)
-            pins.digitalWritePin(DigitalPin.P3, 0)
-        }
-
-        else if (M == 2 && R == 1) {
-            pins.digitalWritePin(DigitalPin.P0, 0)
-            pins.digitalWritePin(DigitalPin.P1, 1)
-            pins.digitalWritePin(DigitalPin.P2, 0)
-            pins.digitalWritePin(DigitalPin.P3, 1)
-        }
-        else if (M == 2 && R == 2) {
-            pins.digitalWritePin(DigitalPin.P0, 0)
-            pins.digitalWritePin(DigitalPin.P1, 0)
-            pins.digitalWritePin(DigitalPin.P2, 0)
-            pins.digitalWritePin(DigitalPin.P3, 0)
+        else {
+            startMotor(MotorFixedPinList[0][0], MotorFixedPinList[0][1], R)
+            startMotor(MotorFixedPinList[1][0], MotorFixedPinList[1][1], R)
         }
 
 
@@ -129,22 +90,7 @@ namespace KissMintMotor {
     export function Motor_A_PinWahl(R: Richtung, A1: MotorPin, A2: MotorPin) {
         let pinlist: DigitalPin[] = [DigitalPin.P0, DigitalPin.P1, DigitalPin.P2, DigitalPin.P3, DigitalPin.C16, DigitalPin.C17, DigitalPin.C18, DigitalPin.C19]
 
-
-        if (R == 0) {
-            pins.digitalWritePin(pinlist[A1], 1)
-            pins.digitalWritePin(pinlist[A2], 0)
-
-        }
-        else if (R == 1) {
-            pins.digitalWritePin(pinlist[A1], 0)
-            pins.digitalWritePin(pinlist[A2], 1)
-
-        }
-        else if (R == 2) {
-            pins.digitalWritePin(pinlist[A1], 0)
-            pins.digitalWritePin(pinlist[A2], 0)
-
-        }
+        startMotor(pinlist[A1], pinlist[A2], R)
 
 
     }
@@ -163,40 +109,29 @@ namespace KissMintMotor {
     export function Motor_B_PinWahl(R: Richtung, B1: MotorPin, B2: MotorPin) {
         let pinlist: DigitalPin[] = [DigitalPin.P0, DigitalPin.P1, DigitalPin.P2, DigitalPin.P3, DigitalPin.C16, DigitalPin.C17, DigitalPin.C18, DigitalPin.C19]
 
-        if (R == 0) {
-            pins.digitalWritePin(pinlist[B1], 1)
-            pins.digitalWritePin(pinlist[B2], 0)
-
-        }
-        else if (R == 1) {
-            pins.digitalWritePin(pinlist[B1], 0)
-            pins.digitalWritePin(pinlist[B2], 1)
-
-        }
-        else if (R == 2) {
-            pins.digitalWritePin(pinlist[B1], 0)
-            pins.digitalWritePin(pinlist[B2], 0)
-
-        }
-
+        startMotor(pinlist[B1], pinlist[B2], R)
 
     }
 
 
 
 
+
+
+
+
     /** 
-     * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücke(L293D) oder Darlington-Array(ULN2003)
-     * Wie viele Schritte = 1 Umdrehung entspricht ist vom Motor abhängig
-     * @param S wähle um wieviele Schritte sich der motor drehen soll
-     * @param R wähle die Richtung des Motors
-     
-     * Verbinde:
-         * P0 mit IN1
-         * P1 mit IN2
-         * P1 mit IN3
-         * P1 mit IN4
-     */
+       * Dieser Block steuert einen Schrittmotor z.B. 28BYJ-48 über eine H-Brücke(L293D) oder Darlington-Array(ULN2003)
+       * Wie viele Schritte = 1 Umdrehung entspricht ist vom Motor abhängig
+       * @param S wähle um wieviele Schritte sich der motor drehen soll
+       * @param R wähle die Richtung des Motors
+       
+       * Verbinde:
+           * P0 mit IN1
+           * P1 mit IN2
+           * P1 mit IN3
+           * P1 mit IN4
+       */
     //% block
     export function SchrittMotor(R: Richtung, S: number) {
         let i = 0;
@@ -267,6 +202,7 @@ namespace KissMintMotor {
 
 
     }
+
 
 }
  

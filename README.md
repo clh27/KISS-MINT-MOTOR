@@ -19,7 +19,7 @@ Getestet wurde dies mit dem Schrittmotor 28BYJ-48 (mit einer untersetzung von 1 
 Dieser Motor vollzieht mit rund 513 Schritten eine vollständige Umdrehung.
 
 
-| ![Mini Dual Motor Driver](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/IMG_20200206_092023061.jpg "Mini Dual Motor Driver") | ![Dual Motor Driver Deek-Robot](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/IMG_20200206_092121619.jpg "Dual Motor Driver Deek-Robot") |
+| ![Mini Dual Motor Driver](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/Mini%20dual%20Motor%20driver.jpg "Mini Dual Motor Driver") | ![Dual Motor Driver Deek-Robot](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/Motor%20Driver.jpg "Dual Motor Driver Deek-Robot") |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 |                                            _Mini Dual Motor Driver_                                           |                                   _Dual Motor Driver Deek-Robot_
 | ![Anschluss Schema](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/l293_anschluss.jpg "Anschluss Schema") | 

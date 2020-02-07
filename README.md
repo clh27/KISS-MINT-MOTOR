@@ -21,11 +21,11 @@ Dieser Motor vollzieht mit rund 513 Schritten eine vollständige Umdrehung.
 
 | ![Mini Dual Motor Driver](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/IMG_20200206_092023061.jpg "Mini Dual Motor Driver") | ![Dual Motor Driver Deek-Robot](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/IMG_20200206_092121619.jpg "Dual Motor Driver Deek-Robot") |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
-|                                            _Mini Dual Motor Driver_                                           |                                   _Dual Motor Driver Deek-Robot_                                             
-| ![Anschluss Schema](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/l293_anschluss.jpg "Anschluss Schema") |
-| ![Darlington Array](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/IMG_20200206_092255757.jp "Darlington Array") |
+|                                            _Mini Dual Motor Driver_                                           |                                   _Dual Motor Driver Deek-Robot_
+| ![Anschluss Schema](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/l293_anschluss.jpg "Anschluss Schema") | ![Darlington Array](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/IMG_20200206_092255757.jp "Darlington Array") |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
-|                                            _Anschluss Schema_                                           |   |                                            _Darlington Array_                                          |   
+|                                            _Anschluss Schema_                                           |                                   _Darlington Array_ 
+                                         |   
 
 
 ## Supported targets

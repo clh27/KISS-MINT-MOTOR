@@ -64,48 +64,48 @@ namespace KissMintMotor {
 
         }
 
-        else if (M == 0 && R == 1) {
+        if (M == 0 && R == 1) {
             pins.digitalWritePin(DigitalPin.P0, 0)
             pins.digitalWritePin(DigitalPin.P1, 1)
 
         }
-        else if (M == 0 && R == 2) {
+        if (M == 0 && R == 2) {
             pins.digitalWritePin(DigitalPin.P0, 0)
             pins.digitalWritePin(DigitalPin.P1, 0)
 
         }
 
-        else if (M == 1 && R == 0) {
+        if (M == 1 && R == 0) {
 
             pins.digitalWritePin(DigitalPin.P1, 1)
             pins.digitalWritePin(DigitalPin.P1, 0)
         }
 
-        else if (M == 1 && R == 1) {
+        if (M == 1 && R == 1) {
 
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.digitalWritePin(DigitalPin.P1, 1)
         }
-        else if (M == 1 && R == 2) {
+        if (M == 1 && R == 2) {
 
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.digitalWritePin(DigitalPin.P1, 0)
         }
 
-        else if (M == 2 && R == 0) {
+        if (M == 2 && R == 0) {
             pins.digitalWritePin(DigitalPin.P0, 1)
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.digitalWritePin(DigitalPin.P1, 1)
             pins.digitalWritePin(DigitalPin.P1, 0)
         }
 
-        else if (M == 2 && R == 1) {
+        if (M == 2 && R == 1) {
             pins.digitalWritePin(DigitalPin.P0, 0)
             pins.digitalWritePin(DigitalPin.P1, 1)
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.digitalWritePin(DigitalPin.P1, 1)
         }
-        else if (M == 2 && R == 2) {
+        if (M == 2 && R == 2) {
             pins.digitalWritePin(DigitalPin.P0, 0)
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.digitalWritePin(DigitalPin.P1, 0)

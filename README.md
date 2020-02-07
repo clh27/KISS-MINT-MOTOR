@@ -23,7 +23,6 @@ Dieser Motor vollzieht mit rund 513 Schritten eine vollständige Umdrehung.
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 |                                            _Mini Dual Motor Driver_                                           |                                   _Dual Motor Driver Deek-Robot_
 | ![Anschluss Schema](https://github.com/r00b1nh00d/KISS-MINT-MOTOR/blob/master/l293_anschluss.jpg "Anschluss Schema") | 
-| :----------------------------------------------------------------------------------------------: | 
 |                                            _Anschluss Schema_                                           |   
 
 

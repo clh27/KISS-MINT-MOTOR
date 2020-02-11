@@ -1,5 +1,6 @@
 
 declare const enum MyMotor {
+    //zum auswählen der Motoren
     //% block="A"
     A = 0,
     //% block="B"
@@ -8,6 +9,7 @@ declare const enum MyMotor {
     Ab = 2,
 }
 declare const enum Richtung {
+    //zum auswählen der Richtung
     //% block="Vor"
     V = 0,
     //% block="Zurück"
@@ -24,7 +26,7 @@ declare const enum Richtung {
 namespace KissMintMotor {
 
     function startMotor(M1: DigitalPin, M2: DigitalPin, richtungsWert: Richtung) {
-        let richtung: number[][] = [[1, 0], [0, 1], [0, 0]]
+        let richtung: number[][] = [[1, 0], [0, 1], [0, 0]]  //entweder wird ein Eingang auf high und der andere auf low geschalten (zum vorwaerts oder rueckwaerts fahren) oder beide auf low (der Motor wird gebremst)
 
         pins.digitalWritePin(M1, richtung[richtungsWert][0])
         pins.digitalWritePin(M2, richtung[richtungsWert][1])
@@ -44,7 +46,7 @@ namespace KissMintMotor {
 
     export function DigitalMotor(M: MyMotor, R: Richtung) {
         let MotorFixedPinList: DigitalPin[][] = [[DigitalPin.P0, DigitalPin.P1], [DigitalPin.P2, DigitalPin.P3]]
-
+//Es wurden die Pins P0 bis P3 gewählt, da diese frei verfügbar sind. Will man die Pins C4 bis C12 verwenden muss die LED-Matrix zusätzlich deaktiviert werden da diese doppelt belegt sind.
         if (M < 2) {
             startMotor(MotorFixedPinList[M][0], MotorFixedPinList[M][1], R)
         }
